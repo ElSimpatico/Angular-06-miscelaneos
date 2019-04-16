@@ -10,7 +10,7 @@ import { USUARIO_ROUTES } from './components/usuario/usuario.routes';
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'usuario', component: UsuarioComponent, children: USUARIO_ROUTES},
+    { path: 'usuario/:id', component: UsuarioComponent, children: USUARIO_ROUTES},
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
